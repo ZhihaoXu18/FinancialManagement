@@ -27,5 +27,10 @@ function form_submit (e) {
     return
   }
   alert('Form submitted succesfully!')
-  financialForm.reset();
+  input_process(fullName.value, customerEmail.value, monthlyIncome.value, monthlyExpenses.value, savingsGoal.value);
+  financialForm.reset()
+}
+
+function input_process (name, email, income, expense, saving) {
+  console.log(name, email, income, expense, saving);
 }
