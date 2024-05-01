@@ -3,7 +3,7 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  background-image: url('/Users/zhihaoxu/Financial_Management/background_image.jpg');
+  background-image: url('./background_image.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
