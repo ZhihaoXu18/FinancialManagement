@@ -33,6 +33,6 @@ function form_submit (e) {
   financialForm.reset()
 }
 
-function input_process (name, email, income, expense, saving) {
-  console.log(name, email, income, expense, saving);
+function input_process (country, province, income, expense, saving) {
+  console.log(country, province, income, expense, saving);
 }
