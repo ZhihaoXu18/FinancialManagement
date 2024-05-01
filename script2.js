@@ -1,8 +1,8 @@
 document.getElementById('financialForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
-    const fullName = document.getElementById('fullName').value;
-    const email = document.getElementById('email').value;
+    const country = document.getElementById('country').value;
+    const province = document.getElementById('province').value;
     const monthlyIncome = document.getElementById('monthlyIncome').value;
     const monthlyExpenses = document.getElementById('monthlyExpenses').value;
     const savingsGoal = document.getElementById('savingsGoal').value;
