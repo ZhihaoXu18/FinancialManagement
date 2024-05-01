@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="customer_input.css">
+    <link rel="stylesheet" href="customer_input.css"/>
+    <link rel="stylesheet" href="styles.css"/>
     <title>Financial Information Input</title>
 </head>
 <body>
@@ -15,25 +16,27 @@
           <a href="#" class="button">Book a Demo</a>
         </div>
     </div>
-    <div class="form-container">
-        <h1>Financial Information Form</h1>
-        <form id="financialForm">
-            <label for="country">Country of your occupuation:</label>
-            <input type="text" id="country" name="country" required>
+    <div class="wrapper">
+        <div class="form-container">
+            <h1>Financial Information Form</h1>
+            <form id="financialForm">
+                <label for="country">Country of your occupuation:</label>
+                <input type="text" id="country" name="country" required>
 
-            <label for="province">Province/State</label>
-            <input type="text" id="province" name="province" required>
+                <label for="province">Province/State</label>
+                <input type="text" id="province" name="province" required>
 
-            <label for="monthlyIncome">Monthly Income:</label>
-            <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="$" required>
+                <label for="monthlyIncome">Monthly Income:</label>
+                <input type="number" id="monthlyIncome" name="monthlyIncome" placeholder="$" required>
 
-            <label for="monthlyExpenses">Monthly Expenses:</label>
-            <input type="number" id="monthlyExpenses" name="monthlyExpenses" placeholder="$" required>
+                <label for="monthlyExpenses">Monthly Expenses:</label>
+                <input type="number" id="monthlyExpenses" name="monthlyExpenses" placeholder="$" required>
 
-            <label for="savingsGoal">Savings Goal:</label>
-            <input type="number" id="savingsGoal" name="savingsGoal" placeholder="$" required>
-        </form>
-        <button id="submit">Submit</button>
+                <label for="savingsGoal">Savings Goal:</label>
+                <input type="number" id="savingsGoal" name="savingsGoal" placeholder="$" required>
+            </form>
+            <button id="submit">Submit</button>
+        </div>
     </div>
     <script src="customer_input.js"></script>
 </body>
