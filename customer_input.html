@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="customer_input.css">
     <title>Financial Information Input</title>
 </head>
 <body>
+    <div class="navbar">
+        <div>Your Company Name</div>
+        <div>
+          <a href="index.html" class="button">Home</a>
+          <a href="#" class="button">Company</a>
+          <a href="#" class="button">Book a Demo</a>
+        </div>
+    </div>
     <div class="form-container">
         <h1>Financial Information Form</h1>
         <form id="financialForm">
@@ -24,10 +32,9 @@
 
             <label for="savingsGoal">Savings Goal:</label>
             <input type="number" id="savingsGoal" name="savingsGoal" required>
-
-            <button type="submit">Submit</button>
         </form>
+        <button id="submit">Submit</button>
     </div>
-    <script src="script2.js"></script>
+    <script src="customer_input.js"></script>
 </body>
 </html>
