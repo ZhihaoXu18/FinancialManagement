@@ -1,5 +1,7 @@
-const fullName = document.getElementById('fullName')
-const customerEmail = document.getElementById('email')
+
+
+const customerCountry = document.getElementById('country')
+const customerProvince = document.getElementById('province')
 const monthlyIncome = document.getElementById('monthlyIncome')
 const monthlyExpenses = document.getElementById('monthlyExpenses')
 const savingsGoal = document.getElementById('savingsGoal')
@@ -13,8 +15,8 @@ financialForm.addEventListener('submit', form_submit)
 
 function check_input () {
   return (
-    fullName.value &&
-    customerEmail.value &&
+    customerCountry.value &&
+    customerProvince.value &&
     monthlyIncome.value &&
     monthlyExpenses.value &&
     savingsGoal.value
@@ -27,7 +29,7 @@ function form_submit (e) {
     return
   }
   alert('Form submitted succesfully!')
-  input_process(fullName.value, customerEmail.value, monthlyIncome.value, monthlyExpenses.value, savingsGoal.value);
+  input_process(customerCountry.value, customerProvince.value, monthlyIncome.value, monthlyExpenses.value, savingsGoal.value);
   financialForm.reset()
 }
 
