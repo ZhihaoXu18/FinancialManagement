@@ -12,7 +12,7 @@
         <div>Your Company Name</div>
         <div>
           <a href="index.html" class="button">Home</a>
-          <a href="#" class="button">Company</a>
+          <a href="company.html" class="button">Company</a>
           <a href="#" class="button">Book a Demo</a>
         </div>
     </div>
@@ -21,7 +21,22 @@
             <h1>Financial Information Form</h1>
             <form id="financialForm">
 
-                <label for="province">Province/State</label>
+                <label for="province">Select Province:</label>
+                <select id = "province/territories" name = "province">
+                    <option value="Ontario">Ontario</option>
+                    <option value="British Columbia">British Columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="New Brunswick">New Brunswick</option>
+                    <option value="Quebec">Quebec</option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                    <option value="Nova Scotia">Nova Scotia</option>
+                    <option value="PEI">PEI</option>
+                    <option value="NewFoundland">NewFoundland</option>
+                    <option value="NorthWest Territories">NorthWest Territories</option>
+                    <option value="Yukon">Yukon</option>
+                    <option value="Nunavut">Nunavut</option>
+                     </select>
                 <input type="text" id="province" name="province" required>
 
                 <label for="monthlyIncome">Monthly Income:</label>
