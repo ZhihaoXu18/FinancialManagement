@@ -1,52 +1,49 @@
+/* customer_input.css */
 
 .wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
 .form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: white;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 400px;
 }
 
-form {
-  display: grid;
-  grid-gap: 10px;
-  width: 300px;
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-label {
+.form-container label {
   display: block;
+  margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"] {
+.form-container select,
+.form-container input[type="number"] {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-button {
-  display: block;
-  background: #0066ff;
-  color: white;
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  margin-top: 10px;
-  padding: 10px 40px;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #0056e8;
+.form-container button:hover {
+  background-color: #0056b3;
 }
