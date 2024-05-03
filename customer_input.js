@@ -1,6 +1,5 @@
 
 
-const customerCountry = document.getElementById('country')
 const customerProvince = document.getElementById('province')
 const monthlyIncome = document.getElementById('monthlyIncome')
 const monthlyExpenses = document.getElementById('monthlyExpenses')
