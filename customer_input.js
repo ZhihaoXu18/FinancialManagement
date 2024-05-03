@@ -14,7 +14,6 @@ financialForm.addEventListener('submit', form_submit)
 
 function check_input () {
   return (
-    customerCountry.value &&
     customerProvince.value &&
     monthlyIncome.value &&
     monthlyExpenses.value &&
@@ -28,10 +27,10 @@ function form_submit (e) {
     return
   }
   alert('Form submitted succesfully!')
-  input_process(customerCountry.value, customerProvince.value, monthlyIncome.value, monthlyExpenses.value, savingsGoal.value);
+  input_process(customerProvince.value, monthlyIncome.value, monthlyExpenses.value, savingsGoal.value);
   financialForm.reset()
 }
 
-function input_process (country, province, income, expense, saving) {
-  console.log(country, province, income, expense, saving);
+function input_process ( province, income, expense, saving) {
+  console.log(province, income, expense, saving);
 }
