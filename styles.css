@@ -1,7 +1,10 @@
 body, html {
-  margin: 0;
-  padding: 0;
   height: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
   font-family: Arial, sans-serif;
   background-image: url('./background_image.jpg');
   background-repeat: no-repeat;
@@ -9,21 +12,6 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
 }
-
-/*
-The old code block, will delete soon.
-*/
-
-/**
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-image: url('/Users/nova/project/Financial_Management/WechatIMG38.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-**/
 
 .navbar {
   display: flex;
@@ -60,10 +48,11 @@ body, html {
   padding: 60px 20px; /* Same as navbar height to maintain spacing */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   z-index: 1;
+  padding-top: 60vh; 
 }
 
 .main-heading {

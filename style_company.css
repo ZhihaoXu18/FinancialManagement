@@ -2,6 +2,9 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
     /**
     // change the URL to use preferred background image
@@ -48,10 +51,11 @@ body, html {
     padding: 60px 20px; /* Same as navbar height to maintain spacing */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     z-index: 1;
+    padding-top: 33.33vh;
   }
   
   .main-heading {
