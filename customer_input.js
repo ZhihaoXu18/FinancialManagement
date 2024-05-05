@@ -1,6 +1,6 @@
 
 
-const customerProvince = document.getElementById('provinceSelect').value;
+const customerProvince = document.getElementById('province')
 const monthlyIncome = document.getElementById('monthlyIncome')
 const monthlyExpenses = document.getElementById('monthlyExpenses')
 const savingsGoal = document.getElementById('savingsGoal')
