@@ -130,6 +130,7 @@ function input_process (province, income, expense, saving) {
       }
     }
   }
+  console.log(return_text)
   returnStatementWrapper.classList.remove('hidden')
   returnStatement.innerHTML = return_text
 }
