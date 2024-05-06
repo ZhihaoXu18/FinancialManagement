@@ -2,6 +2,7 @@
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -48,4 +49,12 @@
 
 .form-container button:hover {
   background-color: #0056b3;
+}
+
+
+.return__statement__wrapper.hidden {
+  height: 0;
+  padding: 0 2.25rem;
+  margin-bottom: 0;
+  opacity: 0;
 }
