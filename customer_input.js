@@ -89,7 +89,7 @@ function input_process(province, income, expense, saving) {
       }
   }
 
-   else if (province === "Nova Scotia" || province === "Alberta" ||  province === "Alberta") {
+   else if (province === "Nova Scotia" || province === "Alberta" ||  province === "Manitoba") {
       // Condition for Quebec
       if (income < 2000 && expense > 1000) {
           console.log("Quebec: Low income and relatively high spending.");
