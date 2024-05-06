@@ -91,13 +91,30 @@ function input_process(province, income, expense, saving) {
 
    else if (province === "Nova Scotia" || province === "Alberta" ||  province === "Manitoba") {
       // Condition for Quebec
-      if (income < 2000 && expense > 1000) {
-          console.log("Quebec: Low income and relatively high spending.");
-      } else {
-          console.log("Quebec: Other financial situation.");
+      if (income < 2750) {
+        if (expense > income * 0.95) {
+          console.log("Moderate income and low spending.");
+        } else { 
+          console.log("Saving amount is decent for your income level!")
+        }
+
+      } 
+      else if (income >= 2750 && income <= 4500) {
+        if (expense > income * 0.85) {
+          console.log ("Expense if over the index for this income level!")
+        }
+        else {
+          console.log ("Saving amount is decent for your income level, keep up!")
+        }
+          ;
       }
-  } else {
-      // Default condition if none of the specific provinces are matched
-      console.log("No specific financial checks for this province.");
-  }
+      else {
+        if (expense > income * 0.70){
+          console.log ("Expense is a bit much, despite you have a high income.")
+        }
+        else {
+          console.log ("Good job keep up with same expense with this income, keep up!")
+        }
+      }
+  } 
 }
