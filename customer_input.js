@@ -37,7 +37,7 @@ function input_process(province, income, expense, saving) {
   console.log("Saving:", saving);
 
   // Check for different provinces with specific financial conditions
-  if (province === "Ontario" || province === "British Columbia") {
+  if (province === "Ontario" || province === "British Columbia" || province === "Northwest Territories") {
       // Condition for Ontario
       if (income < 3000) {
         if (expense > income * 0.95) {
@@ -89,7 +89,9 @@ function input_process(province, income, expense, saving) {
       }
   }
 
-   else if (province === "Nova Scotia" || province === "Alberta" ||  province === "Manitoba") {
+   else if (province === "Nova Scotia" || province === "Alberta" ||  province === "Manitoba" ||
+    province === "Yokon" || province === "Saskatchewan")
+    {
       // Condition for Quebec
       if (income < 2750) {
         if (expense > income * 0.95) {
