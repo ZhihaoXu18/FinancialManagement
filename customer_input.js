@@ -43,7 +43,11 @@ function input_process (province, income, expense, saving) {
   console.log('Saving:', saving)
   let return_text = ''
   // Check for different provinces with specific financial conditions
- if (
+  if (expense > income) {
+    return_text = 'Alert: Expenses exceed income. Please review your budget.';
+}
+else {
+  if (
     province === 'Ontario' ||
     province === 'British Columbia' ||
     province === 'Northwest Territories'
@@ -129,6 +133,8 @@ function input_process (province, income, expense, saving) {
           'Good job keep up with same expense with this income, keep up!'
       }
     }
+} 
+
   }
   console.log(return_text)
   returnStatementWrapper.classList.remove('hidden')
