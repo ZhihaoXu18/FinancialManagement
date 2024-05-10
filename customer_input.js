@@ -43,7 +43,10 @@ function input_process (province, income, expense, saving) {
   console.log('Saving:', saving)
   let return_text = ''
   // Check for different provinces with specific financial conditions
-  if (
+  if (income - expense > 0) {
+    return_text = "You are spending more than your income, it is a dangerous financial situation!  either reduce you spending or increase your income."
+  }
+  else if (
     province === 'Ontario' ||
     province === 'British Columbia' ||
     province === 'Northwest Territories'
