@@ -42,7 +42,17 @@ function input_process (province, income, expense, saving) {
   console.log('Expense:', expense)
   console.log('Saving:', saving)
   let return_text = ''
-  // Check for different provinces with specific financial conditions
+    // Check for different provinces with specific financial conditions
+  let monthlySavings = income - expense;
+
+    // Format time to goal
+  let monthsToGoal = monthlySavings > 0 ? Math.ceil(saving/ monthlySavings) : Infinity;
+
+    // Format time to goal
+  let timeToGoalText = monthsToGoal === Infinity ? 
+        'undefined (you are not saving any money or your expenses exceed your income)' : 
+        `${monthsToGoal} month(s)`;
+
   if (expense > income) {
     return_text = 'Alert: Expenses exceed income. Please review your budget.';
 }
