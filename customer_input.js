@@ -65,26 +65,26 @@ else {
     if (income < 3000) {
       if (expense > income * 0.95) {
         return_text =
-          'Alert: Spending exceeds 80% of income. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Alert: Spending exceeds 80% of income. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
         return_text =
-          'Good: Spending is within acceptable limits for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Good: Spending is within acceptable limits for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     } else if (income >= 3000 && income <= 5000) {
       if (expense > income * 0.85) {
         return_text =
-          'Alert: Spending exceeds 85% of income, which is too high for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Alert: Spending exceeds 85% of income, which is too high for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
         return_text =
-          'Good: Spending is within acceptable limits for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Good: Spending is within acceptable limits for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     } else if (income > 5000) {
       if (expense > income * 0.6) {
         return_text =
-          'Alert: Spending exceeds 60% of income, which is too high for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Alert: Spending exceeds 60% of income, which is too high for this income bracket. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
         return_text =
-          'Good: Spending is within acceptable limits for this income bracket.At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Good: Spending is within acceptable limits for this income bracket.At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     }
   } else if (
@@ -96,22 +96,22 @@ else {
     // Condition for BC
     if (income > 2500) {
       if (expense > income * 0.95) {
-        return_text = 'Moderate income and low spending. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;' 
+        return_text = 'Moderate income and low spending. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;' 
       } else {
-        return_text = 'Saving amount is decent for your income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Saving amount is decent for your income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     } else if (income >= 2500 && income <= 4000) {
       if (expense > income * 0.85) {
-        return_text = 'Expense if over the index for this income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Expense if over the index for this income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
-        return_text = 'Saving amount is decent for your income level, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Saving amount is decent for your income level, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     } else {
       if (expense > income * 0.7) {
-        return_text = 'Expense is a bit much, despite you have a high income. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Expense is a bit much, despite you have a high income. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
         return_text =
-          'Good job keep up with same expense with this income, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Good job keep up with same expense with this income, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     }
   } else if (
@@ -124,22 +124,22 @@ else {
     // Condition for Quebec
     if (income < 2750) {
       if (expense > income * 0.95) {
-        return_text = 'Moderate income and low spending. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Moderate income and low spending. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
-        return_text = 'Saving amount is decent for your income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Saving amount is decent for your income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     } else if (income >= 2750 && income <= 4500) {
       if (expense > income * 0.85) {
-        return_text = 'Expense if over the index for this income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Expense if over the index for this income level! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
-        return_text = 'Saving amount is decent for your income level, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Saving amount is decent for your income level, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     } else {
       if (expense > income * 0.7) {
-        return_text = 'Expense is a bit much, despite you have a high income. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+        return_text = 'Expense is a bit much, despite you have a high income. At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       } else {
         return_text =
-          'Good job keep up with same expense with this income, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${savingGoal}.`;'
+          'Good job keep up with same expense with this income, keep up! At the current rate, it will take ${timeToGoalText} to reach your saving goal of $${saving}.`;'
       }
     }
 } 
