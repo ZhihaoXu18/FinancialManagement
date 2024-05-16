@@ -6,7 +6,7 @@ body, html {
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
-  background-image: url('./background_image.jpg');
+  background-image: url('../images/background_image.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

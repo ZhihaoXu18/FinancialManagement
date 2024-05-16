@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    /**
+    // change the URL to use preferred background image
+    background-image: url('./background_image.jpg');
+    **/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.nav-links a, .button, .social-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-links a:hover, .button:hover, .social-button:hover {
+    background-color: #555;
+}
+
+.central-container {
+    text-align: center;
+    position: relative;
+    top: 60px; /* Height of the navbar */
+    padding: 60px 20px; /* Same as navbar height to maintain spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 33.33vh;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.sub-heading {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.talk-button, .social-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.talk-button:hover, .social-button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    margin: 20px auto;
+    width: 80%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; 
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+}
